@@ -62,5 +62,12 @@ public class Test {
 		for(int i = 0; i < result_rs.length; i++)
 			System.out.print(result_rs[i] + "  ");
 		System.out.println("\n\n");
+		
+		int[] input10 = {3766666, 7, 8, 5, 2, 1, 67679, 5, 4};
+		CountingSort cos = new CountingSort();
+		cos.countingSort(input10);
+		for(int i = 0; i < input10.length; i++)
+			System.out.print(input10[i] + "  ");
+		System.out.println("\n\n");
 	}
 }
