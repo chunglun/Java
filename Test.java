@@ -53,5 +53,14 @@ public class Test {
 		int[] input8 = {3, 7, 8, 5, 2, 1, 9, 5, 4};
 		CombSort cs = new CombSort();
 		cs.combSort(input8);
+		
+		System.out.println("\n");
+		
+		int[] input9 = {3766666, 7, 8, 5, 2, 1, 67679, 5, 4};
+		LSDRadixSort rs = new LSDRadixSort();
+		int[]result_rs = rs.radixSort(input9);
+		for(int i = 0; i < result_rs.length; i++)
+			System.out.print(result_rs[i] + "  ");
+		System.out.println("\n\n");
 	}
 }
